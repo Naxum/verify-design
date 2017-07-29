@@ -7,7 +7,7 @@ export default Ember.Service.extend({
         Project.create({
             id: 'about',
             title: 'Jake Sawyer Designs and Codes Apps, Games, Websites, and More!',
-            subtitle: 'Howdy',
+            subtitle: 'About',
             footnote: 'He\'s also a big goofball',
             getButton: 'Contact'
         }),

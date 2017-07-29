@@ -1,0 +1,21 @@
+<div class="header">
+    <div class="subtitle">
+        {{project.subtitle}}
+    </div>
+    <div class="title">
+        {{project.title}}
+    </div>
+</div>
+<div class="body">
+    {{project.body}}
+</div>
+<div class="footer">
+    <div class="footnote">
+        {{project.footnote}}
+    </div>
+    {{#if project.getButton}}
+        <div class="get-button">
+            {{project.getButton}}
+        </div>
+    {{/if}}
+</div>

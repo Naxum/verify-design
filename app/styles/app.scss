@@ -23,12 +23,14 @@ body {
     right: 0;
     bottom: 0;
     // -webkit-backdrop-filter: blur(20px);
+    // background: transparentize(white, 0.25);
 }
 
 .body-container {
     max-width: 1024px;
     margin: 0 auto;
     background: white;
+    padding: 3em 0;
 }
 
 .subtitle {
@@ -47,12 +49,6 @@ body {
     letter-spacing: 0.2px;
 }
 
-.portfolio-grid {
-    display: grid;
-    grid-gap: 3rem;
-    grid-template-columns: repeat(5, 1fr);
-}
-
 .get-button {
     background-color: #017BFF;
     padding: 0.25rem 1rem;
@@ -63,45 +59,4 @@ body {
     letter-spacing: 0.4px;
 }
 
-.portfolio-card {
-    display: flex;
-    height: 400px;
-    flex-direction: column;
-    background: #F5F5F5;
-    border-radius: 1rem;
-    padding: 1.5rem;
-    box-shadow: 0 10px 40px 4px rgba(0, 0, 0, 0.10);
-    grid-column-end: span 2;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-
-    &.white {
-        color: white;
-
-        .subtitle {
-            color: #DADADA;
-        }
-    }
-
-    &.looty {
-        background-image: linear-gradient(to bottom, transparentize(purple, 0.25), rgba(0,0,0,0.1)), url("images/looty-card.png");
-        background-blend-mode: darken;
-    }
-
-    &:nth-child(3n-2) {
-        grid-column-end: span 3;
-    }
-
-    .body {
-        flex-grow: 1;
-    }
-
-    .footer {
-        display: flex;
-
-        .foot-note {
-            flex-grow: 1;
-        }
-    }
-}
+@import "portfolio-grid";

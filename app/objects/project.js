@@ -8,5 +8,6 @@ export default Ember.Object.extend({
     footnote: null,
     getButton: null,
     useWhiteText: false,
-    customBackgroundClass: null
+    customBackgroundClass: null,
+    sections: null
 });

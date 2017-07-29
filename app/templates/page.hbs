@@ -1,57 +1,7 @@
 {{portfolio-card null project=model hideGetButton=true}}
 
 <div class="page-body">
-    {{model.title}}
-
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
+    {{#each model.sections as |section|}}
+        {{page-section section=section}}
+    {{/each}}
 </div>

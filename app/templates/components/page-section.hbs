@@ -1,0 +1,20 @@
+{{#if section.image}}
+    <div class="image-container {{if section.imageCaption "has-caption"}}">
+        <img src={{section.image}} />
+        {{#if section.imageCaption}}
+            <div class="image-caption">{{section.imageCaption}}</div>
+        {{/if}}
+    </div>
+{{/if}}
+
+{{#if section.title}}
+    <div class="title">
+        {{section.title}}
+    </div>
+{{/if}}
+
+{{#if section.text}}
+    <div class="text">
+        {{section.text}}
+    </div>
+{{/if}}

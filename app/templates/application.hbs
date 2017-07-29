@@ -1,4 +1,4 @@
-<div id="app-container" class="body-container">
+<div id="app-container" class="body-container {{unless navigator.isIndexRoute "no-scroll"}}">
 
     <div class="header">
         <div class="left-side">
@@ -27,8 +27,6 @@
     {{portfolio-grid}}
 
 </div>
-
-{{log navigator.isIndexRoute}}
 
 {{#link-to "index"}}
     <div id="main-outlet-overlay" class={{unless navigator.isIndexRoute "active"}}></div>

@@ -1,3 +1,5 @@
 {{#each portfolio.projects as |project|}}
-    {{portfolio-card "hi" "page" project.id project=project}}
+    {{#link-to "page" project.id classNames="portfolio-card-container"}}
+        {{portfolio-card project=project}}
+    {{/link-to}}
 {{/each}}

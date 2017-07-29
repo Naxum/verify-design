@@ -34,8 +34,8 @@
     <div id="main-outlet-overlay" class={{unless navigator.isIndexRoute "active"}}></div>
 {{/link-to}}
 
-<div id="main-outlet" class={{unless navigator.isIndexRoute "active"}}>
-    <div id="main-outlet-container" class="body-container">
+<div id="main-outlet-container" class={{unless navigator.isIndexRoute "active"}}>
+    <div id="main-outlet">
         {{outlet}}
     </div>
 </div>

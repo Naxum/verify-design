@@ -1,0 +1,52 @@
+#main-outlet-overlay {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.25s;
+
+    &.active {
+        opacity: 1;
+        pointer-events: auto;
+        -webkit-backdrop-filter: blur(20px);
+        @supports not (-webkit-backdrop-filter: blur(20px)) {
+            background: transparentize(white, 0.25);
+        }
+
+    }
+}
+
+#main-outlet-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 800px;
+    opacity: 0;
+    overflow: auto;
+    margin: 3rem auto 0;
+    pointer-events: none;
+    transition: all 0.25s;
+    background: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: 0 10px 40px 4px rgba(0, 0, 0, 0.20);
+
+    &.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .portfolio-card {
+        width: 100%;
+        cursor: auto;
+    }
+}
+
+.page-body {
+    padding: 2rem;
+}

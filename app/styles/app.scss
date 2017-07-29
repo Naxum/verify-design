@@ -24,52 +24,11 @@ a {
     color: inherit;
 }
 
-.no-scroll {
-    overflow: hidden;
-}
-
-#main-outlet-overlay {
-    opacity: 0;
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: all 0.25s;
-
-    &.active {
-        opacity: 1;
-        pointer-events: auto;
-        -webkit-backdrop-filter: blur(20px);
-        @supports not (-webkit-backdrop-filter: blur(20px)) {
-            background: transparentize(white, 0.25);
-        }
-
-    }
-}
-
-#main-outlet {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+#app-container {
     max-width: 1024px;
-    opacity: 0;
-    overflow: auto;
-    margin: 0 auto;
-    pointer-events: none;
-    transition: all 0.25s;
-
-    &.active {
-        opacity: 1;
-        pointer-events: auto;
-    }
 }
 
 .body-container {
-    max-width: 1024px;
     margin: 3rem auto;
     padding: 3rem 0;
     background: white;
@@ -103,3 +62,4 @@ a {
 }
 
 @import "portfolio-grid";
+@import "page";

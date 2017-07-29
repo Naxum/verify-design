@@ -13,9 +13,11 @@
     <div class="footnote">
         {{project.footnote}}
     </div>
-    {{#if project.getButton}}
-        <div class="get-button">
-            {{project.getButton}}
-        </div>
-    {{/if}}
+    {{#unless hideGetButton}}
+        {{#if project.getButton}}
+            <div class="get-button">
+                {{project.getButton}}
+            </div>
+        {{/if}}
+    {{/unless}}
 </div>

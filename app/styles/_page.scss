@@ -7,15 +7,20 @@
     right: 0;
     bottom: 0;
     transition: all 0.25s;
+    overflow: hidden;
+    overflow-y: hidden;
 
     &.active {
         opacity: 1;
         pointer-events: auto;
-        -webkit-backdrop-filter: blur(20px);
-        @supports not (-webkit-backdrop-filter: blur(20px)) {
-            background: transparentize(white, 0.25);
+        background: transparentize(white, 0.25);
+        @media only screen and (min-width: 768px) {
+            -webkit-backdrop-filter: blur(20px);
+            background: none;
+            @supports not (-webkit-backdrop-filter: blur(20px)) {
+                background: transparentize(white, 0.25);
+            }
         }
-
     }
 }
 
@@ -25,9 +30,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    max-width: $page-max-width;
+    width: $page-max-width;
+    max-width: 90%;
     opacity: 0;
-    overflow: auto;
+    overflow: hidden;
     margin: 3rem auto 0;
     pointer-events: none;
     transition: all 0.25s;
@@ -41,13 +47,57 @@
         pointer-events: auto;
     }
 
-    .portfolio-card {
+    #main-outlet {
         width: 100%;
-        cursor: auto;
+        height: 100%;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+
+        .portfolio-card {
+            width: 100%;
+            cursor: auto;
+            border-top-left-radius: $border-radius;
+            border-top-right-radius: $border-radius;
+        }
+
+        #page-close-button-wrapper {
+            $bgColor: #E7E7E8;
+            position: fixed;
+            width: $page-max-width;
+            max-width: 90%;
+            z-index: 100;
+
+            #page-close-button {
+                position: absolute;
+                top: 1.5rem;
+                right: 1.5rem;
+
+                width: 2rem;
+                height: 2rem;
+                border-radius: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $bgColor;
+
+                &:hover {
+                    background: lighten($bgColor, 5%);
+                }
+
+                &:active {
+                    background: darken($bgColor, 10%);
+                }
+
+                img {
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+        }
     }
 }
 
 .page-body {
-    padding: 0rem 1.5rem 10rem;
+    padding: 0rem 1.5rem 8rem;
     position: relative;
 }

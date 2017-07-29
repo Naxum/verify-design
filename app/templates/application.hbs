@@ -26,34 +26,16 @@
 
     {{portfolio-grid}}
 
-        {{!-- <div class="portfolio-card white looty">
-            <div class="header">
-                <div class="subtitle">
-                    Best of 2016
-                </div>
-                <div class="title">
-                    Looty Dungeon
-                </div>
-            </div>
-            <div class="body">
-
-            </div>
-            <div class="footer">
-                <div class="foot-note">
-                    Challenging cute roguelite
-                </div>
-                <div class="get-button">
-                    View
-                </div>
-            </div>
-        </div>
-        {{#portfolio-card subtitle="For Your Consideration" title="Jake Sawyer Design and Codes Apps, Games, Websites, and More!" footnote="I'm also a giant goofball." getButton="Hire"}}
-            Howdy! This is a component
-        {{/portfolio-card}} --}}
-
 </div>
 
-<div id="main-outlet-overlay"></div>
+{{log navigator.isIndexRoute}}
+
+{{#link-to "index"}}
+    <div id="main-outlet-overlay" class={{unless navigator.isIndexRoute "active"}}></div>
+{{/link-to}}
+
 <div id="main-outlet">
-    {{outlet}}
+    <div class="body-container">
+        {{outlet}}
+    </div>
 </div>

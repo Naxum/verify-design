@@ -12,6 +12,12 @@ body {
     padding: 0;
     background: white;
     font-size: 20px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #main-outlet-overlay {
@@ -22,14 +28,29 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    // -webkit-backdrop-filter: blur(20px);
-    // background: transparentize(white, 0.25);
+    transition: all 0.25s;
+
+    &.active {
+        opacity: 1;
+        pointer-events: auto;
+        -webkit-backdrop-filter: blur(20px);
+        @supports not (-webkit-backdrop-filter: blur(20px)) {
+            background: transparentize(white, 0.25);
+        }
+
+    }
+}
+
+#main-outlet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .body-container {
     max-width: 1024px;
     margin: 0 auto;
-    background: white;
     padding: 3em 0;
 }
 

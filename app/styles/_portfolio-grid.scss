@@ -2,6 +2,7 @@
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: repeat(5, 1fr);
+    position: relative;
 }
 
 .portfolio-card {
@@ -17,6 +18,11 @@
     background-position: center;
     position: relative;
     cursor: pointer;
+    transition: all 0.25s;
+
+    // &.active {
+    //     z-index: 100;
+    // }
 
     &.white {
         color: white;

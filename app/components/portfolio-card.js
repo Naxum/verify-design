@@ -1,8 +1,9 @@
 import Ember from 'ember';
 
-export default Ember.Component.extend({
+export default Ember.LinkComponent.extend({
     classNames: ['portfolio-card'],
     classNameBindings: ['useWhiteText:white', 'customBackgroundClass'],
+    project: null,
     useWhiteText: Ember.computed(function(){
         return this.get('project.useWhiteText');
     }),

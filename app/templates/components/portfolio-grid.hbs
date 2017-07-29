@@ -1,5 +1,3 @@
 {{#each portfolio.projects as |project|}}
-    {{#link-to project.url}}
-        {{portfolio-card project=project}}
-    {{/link-to}}
+    {{portfolio-card "hi" "page" project.id project=project}}
 {{/each}}

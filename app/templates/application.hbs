@@ -1,4 +1,4 @@
-<div class="body-container">
+<div id="app-container" class="body-container">
 
     <div class="header">
         <div class="left-side">
@@ -34,8 +34,8 @@
     <div id="main-outlet-overlay" class={{unless navigator.isIndexRoute "active"}}></div>
 {{/link-to}}
 
-<div id="main-outlet">
-    <div class="body-container">
+<div id="main-outlet" class={{unless navigator.isIndexRoute "active"}}>
+    <div id="main-outlet-container" class="body-container">
         {{outlet}}
     </div>
 </div>

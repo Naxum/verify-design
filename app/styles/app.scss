@@ -13,11 +13,19 @@ body {
     background: white;
     font-size: 20px;
     position: relative;
+
+    &.page {
+        overflow: hidden;
+    }
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 #main-outlet-overlay {
@@ -42,16 +50,30 @@ a {
 }
 
 #main-outlet {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    bottom: 0;
+    max-width: 1024px;
+    opacity: 0;
+    overflow: auto;
+    margin: 0 auto;
+    pointer-events: none;
+    transition: all 0.25s;
+
+    &.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
 }
 
 .body-container {
     max-width: 1024px;
-    margin: 0 auto;
-    padding: 3em 0;
+    margin: 3rem auto;
+    padding: 3rem 0;
+    background: white;
+    border-radius: 1rem;
 }
 
 .subtitle {

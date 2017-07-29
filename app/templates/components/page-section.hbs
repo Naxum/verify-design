@@ -18,3 +18,22 @@
         {{section.text}}
     </div>
 {{/if}}
+
+{{#if section.linkUrl}}
+    <a class="link-container" target="_blank" rel="noreferrer" href={{section.linkUrl}}>
+        <div class="icon">
+            <img src={{section.linkImage}} />
+        </div>
+        <div class="context">
+            <div class="title">
+                {{section.linkTitle}}
+            </div>
+            <div class="subtitle">
+                {{section.linkSubtitle}}
+            </div>
+        </div>
+        <div class="get-button">
+            {{section.linkButton}}
+        </div>
+    </a>
+{{/if}}

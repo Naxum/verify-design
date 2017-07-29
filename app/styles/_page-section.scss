@@ -1,5 +1,7 @@
 .page-section {
     padding-top: 1.5rem;
+    position: relative;
+    width: 100%;
 
     .title {
         font-size: 1em;
@@ -25,6 +27,67 @@
             color: #8E8E93;
             padding: 1rem;
             line-height: normal;
+        }
+    }
+
+    .link-container {
+        $bgColor: #E7E7E8;
+        background: $bgColor;
+
+        position: fixed;
+        bottom: 2rem;
+        left: 0;
+        right: 0;
+        width: $page-max-width * 0.8;
+        margin: 0 auto;
+
+        // margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        transition: all 0.25s;
+
+        &:hover {
+            background: lighten($bgColor, 5%);
+        }
+
+        &:active {
+            background: darken($bgColor, 10%);
+        }
+
+        .icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            margin-right: 1rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .context {
+            flex-grow: 1;
+            color: #454546;
+            .title {
+                font-weight: 600;
+                color: #454546;
+            }
+            .subtitle {
+                text-transform: none;
+                color: #454546;
+                margin: 0
+            }
+        }
+
+        .get-button {
+            background:#636364;
+            color: #FFFFFF;
         }
     }
 }

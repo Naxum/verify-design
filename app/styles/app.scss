@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "San Francisco Display", "-apple-system", sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-size: 20px;
+}
+
+#main-outlet-overlay {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // -webkit-backdrop-filter: blur(20px);
+}
+
+.body-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    background: white;
+}
+
+.subtitle {
+    font-weight: medium;
+    text-transform: uppercase;
+    color:#9D9D9F;
+    letter-spacing: 0.3px;
+    font-size: 0.8em;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.get-button {
+    background-color: #017BFF;
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.4px;
+}
+
+.portfolio-card {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    background: #F5F5F5;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 40px 4px rgba(0, 0, 0, 0.10);
+    grid-column-end: span 2;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &.white {
+        color: white;
+
+        .subtitle {
+            color: #DADADA;
+        }
+    }
+
+    &.looty {
+        background-image: linear-gradient(to bottom, transparentize(purple, 0.25), rgba(0,0,0,0.1)), url("images/looty-card.png");
+        background-blend-mode: darken;
+    }
+
+    &:nth-child(3n-2) {
+        grid-column-end: span 3;
+    }
+
+    .body {
+        flex-grow: 1;
+    }
+
+    .footer {
+        display: flex;
+
+        .foot-note {
+            flex-grow: 1;
+        }
+    }
+}

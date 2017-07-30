@@ -132,7 +132,31 @@ export default Ember.Service.extend({
             subtitle: 'VR Game for HTC Vive',
             customBackgroundClass: 'job-simulator',
             useWhiteText: true,
-            footnote: 'Explored designs for starting area'
+            footnote: 'Explored designs for starting area',
+            sections: [
+                PageSection.create({
+                    title: `Job Museum Simulator`,
+                    text: `While I didn't spend enough time at Owlchemy Labs to have a major role on Job Simulator, I'm still very proud to have a role in helping define the introductory Jobs Museum area of the game, as well as implementing other minor features and props.`
+                }),
+                PageSection.create({
+                    image: `assets/images/job-simulator/job-simulator-sketches.jpg`,
+                    imageCaption: `Process sketches for defining the starting area, and interactions required to start a game.`
+                }),
+                PageSection.create({
+                    title: `Tools and Roles`,
+                    text: `All implementation was done within the Unity 3D game engine, utilizing C#. Some minor modeling was done in Autodesk Maya. Interestingly, the source control of this project was in Unity's own source control system, which was a hassle.`
+                }),
+                PageSection.create({
+                    text: `My roles included prototyping areas and prop features. My primary responsibility was to shape the starting area of the game via sketches, models, and actual implementation. I also needed to explore the  interactions required to enter a level. My solution was Nintendo Entertainment System-style cartridges that could be plugged into a console to choose a level to play.`
+                }),
+                PageSection.create({
+                    title: `Major Challenges`,
+                    text: `One of the exciting things about working at Owlchemy Labs was the constant stream of virtual reality hardware, from the boxes and boxes of Google Cardboards to the experimental headsets and controllers that would work only occasionally.`
+                }),
+                PageSection.create({
+                    text: `Developing a project on experimental hardware meant constant communication with the hardware teams and understanding where issues originated, and how to work around them until a proper fix was implemented.`
+                })
+            ]
         }),
 
         //Forge page

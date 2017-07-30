@@ -9,5 +9,6 @@ export default Ember.Object.extend({
     linkImage: null,
     linkTitle: null,
     linkSubtitle: null,
-    linkButton: null
+    linkButton: null,
+    imageBorder: false
 });

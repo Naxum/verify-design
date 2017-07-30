@@ -4,20 +4,49 @@ import PageSection from '../objects/page-section'
 
 export default Ember.Service.extend({
     projects: [
+        // About page
         Project.create({
             id: 'about',
             title: 'Jake Sawyer Designs and Codes Apps, Games, Websites, and More!',
             subtitle: 'About',
             footnote: 'He\'s also a big goofball',
-            getButton: 'Contact',
+            getButton: 'About',
             customBackgroundClass: 'about',
             useWhiteText: true,
             sections: [
                 PageSection.create({
-                    text: 'Hey'
+                    title: `Howdy!`,
+                    text: `Nothing gets me more excited than working together with brilliant people to create next-generation experiences via apps and games. I love building prototypes to explore concepts and new technology — virtual and augmented reality are particularly exciting, as well as productivity tools for teams and professionals.`
+                }),
+                PageSection.create({
+                    text: `Keeping up to date with technology and design patterns is one of my passions. I take pride in my ability to take a product from ideas and wireframes to functional code. Whether it's the latest feature in an iOS beta, or a new tool in a game engine, I love uncovering the possibilities they unlock.`
+                }),
+                PageSection.create({
+                    image: 'assets/images/about/vive-jam-1.jpg',
+                    imageCaption: `The Taco Illuminati team developing a virtual reality game in under 48 hours!`
+                }),
+                PageSection.create({
+                    title: `A Man of Many Hats`,
+                    text: `Constantly learning new technologies allows me to have multiple roles in many of my projects. I'm a cofounder of my games company Taco Illuminati, where I design gameplay, wireframe and implement user inferfaces, and research and create monetization strategies. I've even given formal tech talks about it!`
+                }),
+                PageSection.create({
+                    text: `Game development isn't my only love, I also create apps and websites. For example, this website was written in Ember.js over the course of a weekend. I try to work fast! On the application side, right out of college I jumped into Objective-C with Forge, a Best of 2015 iPad app. Nowadays I build iOS application prototypes in Swift for fun (and to learn all the cool new stuff)!`
+                }),
+                PageSection.create({
+                    title: `When I'm Not Creating...`,
+                    text: `I love unwinding by playing videogames or catching up on awesome TV shows like Steven Universe and Game of Thrones. I used to practice Karate when I was younger and am a second-degree black belt in Karate! I hope to continue practicing martial arts soon.`
+                }),
+                PageSection.create({
+                    linkUrl: 'https://www.linkedin.com/in/naxum/',
+                    linkImage: 'assets/images/about/linkedin-logo.png',
+                    linkTitle: 'Check out my LinkedIn',
+                    linkSubtitle: 'Full work history and more!',
+                    linkButton: 'View'
                 })
             ]
         }),
+
+        // Stickies page
         Project.create({
             id: 'stickies',
             title: 'Sticky Notes iPad App',
@@ -25,6 +54,8 @@ export default Ember.Service.extend({
             footnote: 'iOS 11, Drag and Drop, Metal 2, Swift...',
             customBackgroundClass: 'stickies',
         }),
+
+        //FarBridge page
         Project.create({
             id: 'farbridge',
             title: 'Multiplayer VR Game for HTC Vive',
@@ -32,6 +63,8 @@ export default Ember.Service.extend({
             customBackgroundClass: 'farbridge',
             footnote: 'Unity Engine, Photon Networking'
         }),
+
+        //Looty Dungeon page
         Project.create({
             id: 'looty-dungeon',
             title: 'Looty Dungeon',
@@ -42,25 +75,57 @@ export default Ember.Service.extend({
             customBackgroundClass: 'looty',
             sections: [
                 PageSection.create({
-                    title: 'TypeShift instantly hooked us with its intuitive controls and inviting style. How did you come up with the concept?',
-                    text: 'Hello there'
+                    title: `The Little Dungeon Crawler That Could`,
+                    text: `Looty Dungeon is a procedurally generated dungeon crawler for iOS. It offers over 50 playable characters with their own skillsets and abilities, and has various bosses to defeat and areas to explore. The game was implicitely designed to work with all modern iOS devices in either landscape or portrait orientations.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/looty/looty-1.png',
-                    imageCaption: 'Zach\'s custom-made arcade cabinet up close. It wasn\'t for sale. Trust us. We Tried'
+                    text: `Creating Looty Dungeon was an intense challenge. As my first full-featured game release, there turned out to be a lot of things to learn. How should levels be loaded? What should the interface look like? Are there any cool iOS features we could use to improve the experience? And it was, of course, over ambitious for a 3-4 person project.`
                 }),
                 PageSection.create({
-                    text: 'Another paragraph, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                    image: `assets/images/looty/looty-1.png`,
+                    imageCaption: `With over 50 different characters with their own abilities and stats, delving deep into the dungeon and battling all the different bosses offers a lot of different strategies`
                 }),
                 PageSection.create({
-                    linkUrl: 'http://google.com',
-                    linkImage: 'assets/images/headshot.jpg',
-                    linkTitle: 'This is a Link!',
-                    linkSubtitle: 'This is the subtitle of the link.',
-                    linkButton: 'View'
+                    title: `Tools and Roles`,
+                    text: `The project was developed in the Unity 3D game engine, utilizing many of its features and services including Unity Ads and Unity Cloud Build. The game was scripted in C#, and I created its website with Ember.js`
+                }),
+                PageSection.create({
+                    text: `I held many roles on the project, including creating and implementing the interface, integrating with the Unity Ads platform, and creating a lot of the internal tools to create levels. I also started the project, and prototyped the initial gameplay.`
+                }),
+                PageSection.create({
+                    image: `assets/images/looty/looty-office.jpg`,
+                    imageCaption: `Unity even named one of their meeting rooms after Looty!`
+                }),
+                PageSection.create({
+                    title: `Major Challenges`,
+                    text: `Taco Illuminati, our indie games studio, was founded to create Looty. We had to quickly learn how to work with each other and our skillsets. For example, our team didn't have much experience with Unity's UI system, or how to make a Free to Play game monetization strategy, so I took it upon myself to get skilled in those areas. For the monetization, I found myself researching and iterating through concepts to put something together.`
+                }),
+                PageSection.create({
+                    text: `While Looty was successful, I spent a lot of time after its release comparing trends and researching competetors to learn in which ways I could improve future projects. In addition, our after-release content strategy was pretty limited. In the future, the notion of a game having weekly events or significant reasons to return and play the game would be baked into the project's development from the start.`
+                }),
+                PageSection.create({
+                    image: `assets/images/looty/looty-featured.jpg`,
+                    imageCaption: `Featured in one of the end-of-the-year roundup categories, and in the first slot too! Though the category mentioning 'looting' might have helped us.`,
+                    imageBorder: true
+                }),
+                PageSection.create({
+                    title: `Notable Achievements`,
+                    text: `Looty Dungeon was featured in its first week of release, which was super humbling, especially since we released next to Disney Crossy Road, which was basically the sequel to our main source of inspiration, Crossy Road. We were also next to another Disney title, so I'm amazed anyone saw our game at all.`
+                }),
+                PageSection.create({
+                    text: `Our game was also featured in an end-of-year category (that I heard was originally named 'Verby Nouns'), which was extremely exciting to see. Usually such categories are only for the best games of the year, so this was an excellent result for our first game.`
+                }),
+                PageSection.create({
+                    linkUrl: 'http://apple.co/LootyDungeon',
+                    linkImage: 'assets/images/looty/looty-app-icon.png',
+                    linkTitle: 'Looty Dungeon',
+                    linkSubtitle: 'Free on the App Store!',
+                    linkButton: 'Get'
                 })
             ]
         }),
+
+        //Job Simulator page
         Project.create({
             id: 'job-simulator',
             title: 'Job Simulator',
@@ -69,6 +134,8 @@ export default Ember.Service.extend({
             useWhiteText: true,
             footnote: 'Explored designs for starting area'
         }),
+
+        //Forge page
         Project.create({
             id: 'forge',
             title: 'Forge',
@@ -88,6 +155,8 @@ export default Ember.Service.extend({
                 })
             ]
         }),
+
+        //Minecraft page
         Project.create({
             id: 'minecraft',
             title: 'Minecraft Overhaul',
@@ -107,6 +176,8 @@ export default Ember.Service.extend({
                 })
             ]
         }),
+
+        //Forge Help page
         Project.create({
             id: 'forge-help',
             title: 'Forge Help',
@@ -125,6 +196,8 @@ export default Ember.Service.extend({
                 })
             ]
         }),
+
+        //CCM page
         Project.create({
             id: 'ccm',
             title: 'Children\'s Creativity Museum Installation',
@@ -144,6 +217,8 @@ export default Ember.Service.extend({
                 })
             ]
         }),
+
+        //Twitcher page
         Project.create({
             id: 'twitcher',
             title: 'Twitcher',
@@ -165,6 +240,7 @@ export default Ember.Service.extend({
                 })
             ]
         }),
+
         /*
         Project.create({
             id: 'behance',

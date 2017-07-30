@@ -5,5 +5,8 @@ export default Ember.Component.extend({
     classNameBindings: ['isLink:is-link'],
     isLink: Ember.computed(function() {
         return this.get('section.linkUrl') !== null;
+    }),
+    imageBorder: Ember.computed(function() {
+        return this.get('section.imageBorder') === true;
     })
 });

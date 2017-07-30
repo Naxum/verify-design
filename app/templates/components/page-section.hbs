@@ -1,5 +1,5 @@
 {{#if section.image}}
-    <div class="image-container {{if section.imageCaption "has-caption"}}">
+    <div class="image-container {{if section.imageCaption "has-caption"}} {{if imageBorder "image-border"}}">
         <img src={{section.image}} />
         {{#if section.imageCaption}}
             <div class="image-caption">{{section.imageCaption}}</div>

@@ -168,14 +168,42 @@ export default Ember.Service.extend({
             footnote: 'An ideation tool for power iPad users',
             sections: [
                 PageSection.create({
-                    text: `
-                    Participated:  8 months from Jun. 2014 to Feb. 2015.
-                    Roles: interaction designer and developer, web designer and developer.
-                    Team: product manager, creative director, and about 10 other designers, developers, and hybrids of the two.
-                    Responsibilities: mainly designed and implemented the "feel" of zooming and panning in the app, with the help of other designers and developers. Documented discoverability audits for interface elements and gestural features. Explored several experimental features via mockups, videos, and interactive prototypes. Developed support web interfaces for both in-app web views and fullscreen safari.
-                    Accomplishments: learned Objective C, Xcode, and a little bit of Swift in a matter of months as my introduction to this project. App went on to earn the Editor\'s Choice award, and later it was deemed the Best App of February 2015 in the iPad app store. (Unfortunately when transferred to a new company the app listing lost these awards).
-                    Tools: created mockups and art assets in Sketch (and previewed in Sketch Mirror), video mockups in After Effects and Premiere. Some minor prototypes were done in Facebook Origami. Development done in Xcode.
-                    `
+                    title: `Forging an Idea with Iterative Sketches`,
+                    text: `Right after college I was luckily employed by Adonit, an iPad stylus creator. My first major project there was Forge, an iPad app for ideating sketch designs over and over without destroying your previous iterations.`
+                }),
+                PageSection.create({
+                    image: `assets/images/forge/forge-ipad-1.png`,
+                    imageCaption: `The layers of a sketch could be individually brought over into a duplicate of your current sketch, allowing you to save your previous iteration as you continued to make edits.`
+                }),
+                PageSection.create({
+                    title: `Tools and Roles`,
+                    text: `My primary role on Forge was to define the "feel" of zooming and panning in the app, with the help of other designers and developers. I also documented discoverability audits for interface elements and gestural features, for a while things were hard to find without obvious affordances.`
+                }),
+                PageSection.create({
+                    text: `I also explored several experimental features via mockups, videos, and interactive prototypes. Mockups and art assets were created in Sketch, videos made in Adobe After Effects and Premiere. I even made a couple prototypes in Facebook Origami. The app itself was created in Xcode with Objective-C. Developed support web interfaces for both in-app web views and fullscreen safari.`
+                }),
+                PageSection.create({
+                    image: `assets/images/forge/forge-ipad-2.png`,
+                    imageCaption: `My primary role was to implement the "feel" of zooming and panning a sketch via gestures.`
+                }),
+                PageSection.create({
+                    title: `Major Challenges`,
+                    text: `Having never worked in Objective-C before, I was given 6 months to learn the language, but ended up only needing a single month to get experienced enough to start branching the project and implementing features. I would eventually take time to learn Swift after its announcement and create a cutting edge version of a sketching app prototype.`
+                }),
+                PageSection.create({
+                    image: `assets/images/forge/forge-ipad-3.png`,
+                    imageCaption: `Forge also had a unique board collection view that implemented quick drag, drop, and reordering back in iOS 8!`
+                }),
+                PageSection.create({
+                    title: `Notable Achievements`,
+                    text: `Forge went on to earn Editor's Choice for its initial launch, and later it was deemed the Best App of February 2015 in the iPad app store. Eventually it was named in the top 30 iPad Apps of 2015.`
+                }),
+                PageSection.create({
+                    linkUrl: 'https://itunes.apple.com/us/app/forge-brainstorm-and-organize-your-ideas/id1021428095',
+                    linkImage: 'assets/images/forge/forge-app-icon.jpg',
+                    linkTitle: 'Forge',
+                    linkSubtitle: 'On the App Store!',
+                    linkButton: '$3.99'
                 })
             ]
         }),

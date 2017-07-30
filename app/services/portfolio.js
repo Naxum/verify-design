@@ -22,7 +22,8 @@ export default Ember.Service.extend({
             id: 'stickies',
             title: 'Sticky Notes iPad App',
             subtitle: 'App Prototype',
-            footnote: 'iOS 11, Drag and Drop, Metal 2, Swift...'
+            footnote: 'iOS 11, Drag and Drop, Metal 2, Swift...',
+            customBackgroundClass: 'stickies',
         }),
         Project.create({
             id: 'farbridge',
@@ -64,6 +65,9 @@ export default Ember.Service.extend({
             id: 'job-simulator',
             title: 'Job Simulator',
             subtitle: 'VR Game for HTC Vive',
+            customBackgroundClass: 'job-simulator',
+            useWhiteText: true,
+            footnote: 'Explored designs for starting area'
         }),
         Project.create({
             id: 'forge',
@@ -88,6 +92,8 @@ export default Ember.Service.extend({
             id: 'minecraft',
             title: 'Minecraft Overhaul',
             subtitle: 'Enhancing the Original',
+            customBackgroundClass: 'minecraft',
+            useWhiteText: true,
             sections: [
                 PageSection.create({
                     text: `
@@ -105,6 +111,7 @@ export default Ember.Service.extend({
             id: 'forge-help',
             title: 'Forge Help',
             subtitle: 'Supplementary Aid Portal',
+            customBackgroundClass: 'forge-help',
             sections: [
                 PageSection.create({
                     text: `
@@ -114,6 +121,65 @@ export default Ember.Service.extend({
                     Responsibilities: implemented and tweaked a design presented in mockups into a fully functioning responsive web interface for both iPad in-app web views and fullscreen safari.
                     Accomplishments: created a system that dynamically generates a table of contents for each support section without manual linking between sections and finished the project within a couple weeks.
                     Tools: web development in Atom, mockup design and tweaking done in Illustrator and Sketch. The website was built on top of Harmony's content management system, and the templates were built from scratch.
+                    `
+                })
+            ]
+        }),
+        Project.create({
+            id: 'ccm',
+            title: 'Children\'s Creativity Museum Installation',
+            subtitle: 'Interactive Wall',
+            customBackgroundClass: 'ccm',
+            useWhiteText: true,
+            sections: [
+                PageSection.create({
+                    text: `
+                    https://vimeo.com/76898836
+                    Participated:  less than 2 weeks in July 2015.
+                    Roles: interaction designer and developer.
+                    Team: several other designer and developers, with one lead scientist.
+                    Responsibilities: designed and developed a quick Flash-based app for a wall with limited access to the hardware in less than a couple weeks. Accomplishments: finished the app in a tight timeframe and crafted pixelated versions of the Children Creativity Museum's mascots.
+                    Tools: Flash, and Photoshop for the pixel art.
+                    `
+                })
+            ]
+        }),
+        Project.create({
+            id: 'twitcher',
+            title: 'Twitcher',
+            subtitle: 'Inspiration Exploration',
+            customBackgroundClass: 'twitcher',
+            useWhiteText: true,
+            sections: [
+                PageSection.create({
+                    text: `
+                    Created for Adobe as an inspirational photo search engine. Tags are dragged to create a hierarchical search query to popular image sites. Originally used an Adobe-based API.
+                    Poorly-maintained demo available. - http://naxite.com/twitcher/
+                    Duration:  3 months from Jun. 2013 to Sept. 2013.
+                    Roles: web designer and developer.
+                    Team: principal designer as mentor, and myself.
+                    Responsibilities: took a rough interface prototype as inspiration and transformed it into a responsive web app for discovering new inspirational photos in a hierarchical search.
+                    Accomplishments: learned how to deal with REST-based APIs in Javascript for the first time. Created as my main project during my internship at Adobe.
+                    Tools: code written in Adobe Edge Code CC, built on top of Brackets. Used a private Adobe-based API at first, eventually moved onto 500px's API after my time at Adobe. Also experimented with Edge Animate CC and Sketch for an intro animation that was ditched.
+                    `
+                })
+            ]
+        }),
+        /*
+        Project.create({
+            id: 'behance',
+            title: 'Behance Learning Portal',
+            subtitle: 'Creative Externship',
+            sections: [
+                PageSection.create({
+                    text: `
+                    http://naxite.com/behance/
+                    Participated:  prototyped in less than 2 weeks in Winter 2015, whole project was about 10 weeks long.
+                    Roles: web designer and developer.
+                    Team: two other designer-developers in our prototype group, with a total of 20 mixed-major students in our project.
+                    Responsibilities: designed and developed several web pages using real HTML & CSS from Behance's live site. for a wall with limited access to the hardware in less than a couple weeks.
+                    Accomplishments: finished the website in a tight timeframe of two weeks for a large presentation with other groups displaying a design book, video, and a stage presentation.
+                    Tools: HTML & CSS.
                     `
                 })
             ]
@@ -136,59 +202,6 @@ export default Ember.Service.extend({
                 })
             ]
         }),
-        Project.create({
-            id: 'twitcher',
-            title: 'Twitcher',
-            subtitle: 'Yep',
-            sections: [
-                PageSection.create({
-                    text: `
-                    Created for Adobe as an inspirational photo search engine. Tags are dragged to create a hierarchical search query to popular image sites. Originally used an Adobe-based API.
-                    Poorly-maintained demo available. - http://naxite.com/twitcher/
-                    Duration:  3 months from Jun. 2013 to Sept. 2013.
-                    Roles: web designer and developer.
-                    Team: principal designer as mentor, and myself.
-                    Responsibilities: took a rough interface prototype as inspiration and transformed it into a responsive web app for discovering new inspirational photos in a hierarchical search.
-                    Accomplishments: learned how to deal with REST-based APIs in Javascript for the first time. Created as my main project during my internship at Adobe.
-                    Tools: code written in Adobe Edge Code CC, built on top of Brackets. Used a private Adobe-based API at first, eventually moved onto 500px's API after my time at Adobe. Also experimented with Edge Animate CC and Sketch for an intro animation that was ditched.
-                    `
-                })
-            ]
-        }),
-        Project.create({
-            id: 'ccm',
-            title: 'Children\'s Creativity Museum Installation',
-            subtitle: 'Interactive Wall',
-            sections: [
-                PageSection.create({
-                    text: `
-                    https://vimeo.com/76898836
-                    Participated:  less than 2 weeks in July 2015.
-                    Roles: interaction designer and developer.
-                    Team: several other designer and developers, with one lead scientist.
-                    Responsibilities: designed and developed a quick Flash-based app for a wall with limited access to the hardware in less than a couple weeks. Accomplishments: finished the app in a tight timeframe and crafted pixelated versions of the Children Creativity Museum's mascots.
-                    Tools: Flash, and Photoshop for the pixel art.
-                    `
-                })
-            ]
-        }),
-        Project.create({
-            id: 'behance',
-            title: 'Behance Learning Portal',
-            subtitle: 'Creaive Externship',
-            sections: [
-                PageSection.create({
-                    text: `
-                    http://naxite.com/behance/
-                    Participated:  prototyped in less than 2 weeks in Winter 2015, whole project was about 10 weeks long.
-                    Roles: web designer and developer.
-                    Team: two other designer-developers in our prototype group, with a total of 20 mixed-major students in our project.
-                    Responsibilities: designed and developed several web pages using real HTML & CSS from Behance's live site. for a wall with limited access to the hardware in less than a couple weeks.
-                    Accomplishments: finished the website in a tight timeframe of two weeks for a large presentation with other groups displaying a design book, video, and a stage presentation.
-                    Tools: HTML & CSS.
-                    `
-                })
-            ]
-        })
+        */
     ]
 });

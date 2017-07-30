@@ -6,11 +6,24 @@
         // background-blend-mode: multiply;
     }
 
+    &.stickies {
+        background-image: linear-gradient(to top, #FFFF01, transparentize(#FFFF01, 1)), url("images/stickies/stickies-card.jpg");
+        background-position: top left;
+
+        .subtitle {
+            color: darken(#FFFF01, 30%);
+        }
+    }
+
     &.forge {
         background-image: linear-gradient(to bottom, transparentize(white, 0.15), transparentize(white, 0.75)), url('images/forge/forge-card.png');
         background-color: transparent;
         background-position: top;
         background-blend-mode: screen;
+    }
+
+    &.forge-help {
+        background-image: linear-gradient(to bottom, transparentize(white, 0), transparentize(white, 0.1) 30%, transparentize(white, 1) 50%), url('images/forge/forge-help-card.png');
     }
 
     &.farbridge {
@@ -23,5 +36,25 @@
     &.about {
         background-image: linear-gradient(to bottom, transparentize(#5E442B, 0.75), transparentize(#1A2E45, 0.9)), url('images/about/about-card-right.jpg');
         background-position: top;
+    }
+
+    &.job-simulator {
+        background-image: linear-gradient(to bottom, transparentize(#6C3F20, 0.25), transparentize(#6C3F20, 0.7)), url('images/job-simulator/job-simulator-card.jpg');
+        background-color: transparent;
+    }
+
+    &.minecraft {
+        background-image: linear-gradient(to bottom, transparentize(#251A0D, 0.2), transparentize(#251A0D, 1)), url('images/minecraft/minecraft-2.png');
+    }
+
+    &.ccm {
+        background-image: url('images/ccm/ccm-card.jpg');
+    }
+
+    &.twitcher {
+        background-image: linear-gradient(to bottom, transparentize(#333333, 0.1) 10%, transparentize(#333333, 1) 50%), url('images/twitcher/twitcher-card.png');
+        background-position: top;
+        // background-color: transparent;
+        // background-blend-mode: multiply;
     }
 }

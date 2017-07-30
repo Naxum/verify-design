@@ -1,0 +1,27 @@
+.portfolio-card {
+    &.looty {
+        background-image: url("images/looty/looty-card.png");
+        background-color: #222C7B;
+        background-position: left;
+        // background-blend-mode: multiply;
+    }
+
+    &.forge {
+        background-image: linear-gradient(to bottom, transparentize(white, 0.15), transparentize(white, 0.75)), url('images/forge/forge-card.png');
+        background-color: transparent;
+        background-position: top;
+        background-blend-mode: screen;
+    }
+
+    &.farbridge {
+        background-image: linear-gradient(to bottom, transparentize(#ECE3CC, 0.1), transparentize(#f29ebf, 0.2)), url('images/farbridge/farbridge-card.jpg');
+        background-blend-mode: hard-light;
+        background-color: transparent;
+        background-position: top;
+    }
+
+    &.about {
+        background-image: linear-gradient(to bottom, transparentize(#5E442B, 0.75), transparentize(#1A2E45, 0.9)), url('images/about/about-card-right.jpg');
+        background-position: top;
+    }
+}

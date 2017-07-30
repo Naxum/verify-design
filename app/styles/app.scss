@@ -35,7 +35,7 @@ a {
 #app-container {
     max-width: $container-max-width;
     padding: 1rem;
-    margin: 0 auto;
+    margin: 0 auto 3remc;
 
     &.no-scroll {
         overflow: hidden;
@@ -91,7 +91,7 @@ a {
     color:#9D9D9F;
     letter-spacing: 0.3px;
     font-size: 0.8em;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
     font-weight: 400;
 }
 

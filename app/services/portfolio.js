@@ -46,44 +46,51 @@ export default Ember.Service.extend({
             ]
         }),
 
-        // Game Prototypes page
+        //Forge page
         Project.create({
-            id: 'game-prototypes',
-            title: 'Game Prototypes',
-            subtitle: 'Sketches and Ideas',
-            customBackgroundClass: 'game-prototypes',
+            id: 'forge',
+            title: 'Forge',
+            subtitle: 'A Best of 2015 App',
+            customBackgroundClass: 'forge',
+            footnote: 'An ideation tool for power iPad users',
             sections: [
                 PageSection.create({
-                    title: `Wireframes Galore`,
-                    text: `After working on Looty Dungeon, I spent a lot of time creating prototypes of games that we could develop in the future. Here are the wireframes for the interfaces and some design sketches to show off my sketches-to-prototype workflow.`
+                    title: `Forging an Idea with Iterative Sketches`,
+                    text: `Right after college I was luckily employed by Adonit, an iPad stylus creator. My first major project there was Forge, an iPad app for ideating sketch designs over and over without destroying your previous iterations.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/game-prototypes/game-sketch-1.png',
-                    imageCaption: `An interaction flow following a user watching a rewarded advertisement in a free to play game to activate an income timer. Flow also shows ways to purchase permanent upgrades to the timer.`
+                    image: `assets/images/forge/forge-ipad-1.png`,
+                    imageCaption: `The layers of a sketch could be individually brought over into a duplicate of your current sketch, allowing you to save your previous iteration as you continued to make edits.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/game-prototypes/game-sketch-9.png',
-                    imageCaption: `Walkthrough of a game's in-app purchase store. Includes highlighted bundle deals, with countdown timer.`
+                    title: `Tools and Roles`,
+                    text: `My primary role on Forge was to define the "feel" of zooming and panning in the app, with the help of other designers and developers. I also documented discoverability audits for interface elements and gestural features, for a while things were hard to find without obvious affordances.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/game-prototypes/game-sketch-12.png',
-                    imageCaption: `Design explorations for an individual item in a list of upgrades. Needs to show enough information to be useful, but not overcluttered on an iPhone.`
+                    text: `I also explored several experimental features via mockups, videos, and interactive prototypes. Mockups and art assets were created in Sketch, videos made in Adobe After Effects and Premiere. I even made a couple prototypes in Facebook Origami. The app itself was created in Xcode with Objective-C. Developed support web interfaces for both in-app web views and fullscreen safari.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/game-prototypes/game-ui-1.jpg',
-                    imageCaption: `Implementation of the previous wireframes after iterating the prototype more and more.`
+                    image: `assets/images/forge/forge-ipad-2.png`,
+                    imageCaption: `My primary role was to implement the "feel" of zooming and panning a sketch via gestures.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/game-prototypes/game-sketch-6.png',
-                    imageCaption: `Exploration of a pinball-style game's main interface while playing.`
+                    title: `Major Challenges`,
+                    text: `Having never worked in Objective-C before, I was given 6 months to learn the language, but ended up only needing a single month to get experienced enough to start branching the project and implementing features. I would eventually take time to learn Swift after its announcement and create a cutting edge version of a sketching app prototype.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/game-prototypes/game-sketch-13.png',
-                    imageCaption: `Breakdown of how a scene will be composed in the game engine.`
+                    image: `assets/images/forge/forge-ipad-3.png`,
+                    imageCaption: `Forge also had a unique board collection view that implemented quick drag, drop, and reordering back in iOS 8!`
                 }),
                 PageSection.create({
-                    title: `Ask Me Anything!`,
-                    text: `I'm always trying to improve my wireframes' readability. If you'd like to learn more about my workflow, feel free to ask!`
+                    title: `Notable Achievements`,
+                    text: `Forge went on to earn Editor's Choice for its initial launch, and later it was deemed the Best App of February 2015 in the iPad app store. Eventually it was named in the top 30 iPad Apps of 2015.`
+                }),
+                PageSection.create({
+                    linkUrl: 'https://itunes.apple.com/us/app/forge-brainstorm-and-organize-your-ideas/id1021428095',
+                    linkImage: 'assets/images/forge/forge-app-icon.jpg',
+                    linkTitle: 'Forge',
+                    linkSubtitle: 'On the App Store!',
+                    linkButton: '$3.99'
                 })
             ]
         }),
@@ -298,51 +305,44 @@ export default Ember.Service.extend({
             ]
         }),
 
-        //Forge page
+        // Game Prototypes page
         Project.create({
-            id: 'forge',
-            title: 'Forge',
-            subtitle: 'A Best of 2015 App',
-            customBackgroundClass: 'forge',
-            footnote: 'An ideation tool for power iPad users',
+            id: 'game-prototypes',
+            title: 'Game Prototypes',
+            subtitle: 'Sketches and Ideas',
+            customBackgroundClass: 'game-prototypes',
             sections: [
                 PageSection.create({
-                    title: `Forging an Idea with Iterative Sketches`,
-                    text: `Right after college I was luckily employed by Adonit, an iPad stylus creator. My first major project there was Forge, an iPad app for ideating sketch designs over and over without destroying your previous iterations.`
+                    title: `Wireframes Galore`,
+                    text: `After working on Looty Dungeon, I spent a lot of time creating prototypes of games that we could develop in the future. Here are the wireframes for the interfaces and some design sketches to show off my sketches-to-prototype workflow.`
                 }),
                 PageSection.create({
-                    image: `assets/images/forge/forge-ipad-1.png`,
-                    imageCaption: `The layers of a sketch could be individually brought over into a duplicate of your current sketch, allowing you to save your previous iteration as you continued to make edits.`
+                    image: 'assets/images/game-prototypes/game-sketch-1.png',
+                    imageCaption: `An interaction flow following a user watching a rewarded advertisement in a free to play game to activate an income timer. Flow also shows ways to purchase permanent upgrades to the timer.`
                 }),
                 PageSection.create({
-                    title: `Tools and Roles`,
-                    text: `My primary role on Forge was to define the "feel" of zooming and panning in the app, with the help of other designers and developers. I also documented discoverability audits for interface elements and gestural features, for a while things were hard to find without obvious affordances.`
+                    image: 'assets/images/game-prototypes/game-sketch-9.png',
+                    imageCaption: `Walkthrough of a game's in-app purchase store. Includes highlighted bundle deals, with countdown timer.`
                 }),
                 PageSection.create({
-                    text: `I also explored several experimental features via mockups, videos, and interactive prototypes. Mockups and art assets were created in Sketch, videos made in Adobe After Effects and Premiere. I even made a couple prototypes in Facebook Origami. The app itself was created in Xcode with Objective-C. Developed support web interfaces for both in-app web views and fullscreen safari.`
+                    image: 'assets/images/game-prototypes/game-sketch-12.png',
+                    imageCaption: `Design explorations for an individual item in a list of upgrades. Needs to show enough information to be useful, but not overcluttered on an iPhone.`
                 }),
                 PageSection.create({
-                    image: `assets/images/forge/forge-ipad-2.png`,
-                    imageCaption: `My primary role was to implement the "feel" of zooming and panning a sketch via gestures.`
+                    image: 'assets/images/game-prototypes/game-ui-1.jpg',
+                    imageCaption: `Implementation of the previous wireframes after iterating the prototype more and more.`
                 }),
                 PageSection.create({
-                    title: `Major Challenges`,
-                    text: `Having never worked in Objective-C before, I was given 6 months to learn the language, but ended up only needing a single month to get experienced enough to start branching the project and implementing features. I would eventually take time to learn Swift after its announcement and create a cutting edge version of a sketching app prototype.`
+                    image: 'assets/images/game-prototypes/game-sketch-6.png',
+                    imageCaption: `Exploration of a pinball-style game's main interface while playing.`
                 }),
                 PageSection.create({
-                    image: `assets/images/forge/forge-ipad-3.png`,
-                    imageCaption: `Forge also had a unique board collection view that implemented quick drag, drop, and reordering back in iOS 8!`
+                    image: 'assets/images/game-prototypes/game-sketch-13.png',
+                    imageCaption: `Breakdown of how a scene will be composed in the game engine.`
                 }),
                 PageSection.create({
-                    title: `Notable Achievements`,
-                    text: `Forge went on to earn Editor's Choice for its initial launch, and later it was deemed the Best App of February 2015 in the iPad app store. Eventually it was named in the top 30 iPad Apps of 2015.`
-                }),
-                PageSection.create({
-                    linkUrl: 'https://itunes.apple.com/us/app/forge-brainstorm-and-organize-your-ideas/id1021428095',
-                    linkImage: 'assets/images/forge/forge-app-icon.jpg',
-                    linkTitle: 'Forge',
-                    linkSubtitle: 'On the App Store!',
-                    linkButton: '$3.99'
+                    title: `Ask Me Anything!`,
+                    text: `I'm always trying to improve my wireframes' readability. If you'd like to learn more about my workflow, feel free to ask!`
                 })
             ]
         }),

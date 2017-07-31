@@ -94,7 +94,35 @@ export default Ember.Service.extend({
             title: 'Multiplayer VR Game for HTC Vive',
             subtitle: 'Unnanounced Game',
             customBackgroundClass: 'farbridge',
-            footnote: 'Unity Engine, Photon Networking'
+            footnote: 'Unity Engine, Photon Networking',
+            sections: [
+                PageSection.create({
+                    title: `Creating a Multiplayer Experience for Virtual Reality`,
+                    text: `Recently was a part of a 6-month long project to build a 4 player virtual reality project in Unity. It was a lot of fun and an interesting challenge to develop a game from scratch for VR and make it multiplayer, which I didn't have much experience with before!`
+                }),
+                PageSection.create({
+                    text: `Because the project hasn't been announced yet, I can't show anything from the real product. But early on I spent time exploring an alternative take on the game, where you and 3 friends are chefs in a taco food truck!`
+                }),
+                PageSection.create({
+                    image: 'assets/images/farbridge/farbridge-sketches-2.png',
+                    imageCaption: `Ideas for a taco truck VR experience, everyone is a chef and has to create as many orders as possible!`
+                }),
+                PageSection.create({
+                    title: `Roles and Technologies`,
+                    text: `I was a designer and developer on this project, doing everything from sketching mockups to implementing major features and syncing props via the Photon networking framework. The game was built in Unity specifically for the HTC Vive, and is targeted at 4 players for a 15 minute play session.`
+                }),
+                PageSection.create({
+                    image: 'assets/images/farbridge/farbridge-sketches-1.png',
+                    imageCaption: `A taco analyzer`
+                }),
+                PageSection.create({
+                    title: `Major Challenges`,
+                    text: `Not having a lot of experience building a networked game, it was a challenge to prototype things quickly. After a couple months things started to click and I was able to code entire features and they would work within a couple test sessions. Another challenge was the test sessions themselves, in general you can't test a multiplayer game without multple players, so finding a stopping point for the team to sync up and test a plethora of features was essential.`
+                }),
+                PageSection.create({
+                    text: `There were also a lot of bugs that would only appear when 3+ players were connected to the game, so our initial tests with 2 players would usually give false positives of everything being okay.`
+                })
+            ]
         }),
 
         //Looty Dungeon page

@@ -23,7 +23,7 @@
     }
 
     &.forge {
-        background-image: linear-gradient(to bottom, transparentize(white, 0.15), transparentize(white, 0.75)), url('images/forge/forge-card.png');
+        background-image: linear-gradient(to bottom, transparentize(white, 0.05) 20%, transparentize(white, 0.75) 50%, white), url('images/forge/forge-card.png');
         background-color: transparent;
         background-position: top;
         background-blend-mode: screen;
@@ -41,6 +41,11 @@
         .subtitle {
             color: desaturate(#BD4573, 40%);
         }
+    }
+
+    &.magento {
+        background-image: url('images/magento/magento-card.png');
+        background-position: top;
     }
 
     &.about {

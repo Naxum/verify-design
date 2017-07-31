@@ -46,6 +46,7 @@ export default Ember.Service.extend({
             ]
         }),
 
+        // Game Prototypes page
         Project.create({
             id: 'game-prototypes',
             title: 'Game Prototypes',
@@ -61,16 +62,20 @@ export default Ember.Service.extend({
                     imageCaption: `An interaction flow following a user watching a rewarded advertisement in a free to play game to activate an income timer. Flow also shows ways to purchase permanent upgrades to the timer.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/game-prototypes/game-sketch-6.png',
-                    imageCaption: `Exploration of a pinball-style game's main interface while playing.`
-                }),
-                PageSection.create({
                     image: 'assets/images/game-prototypes/game-sketch-9.png',
                     imageCaption: `Walkthrough of a game's in-app purchase store. Includes highlighted bundle deals, with countdown timer.`
                 }),
                 PageSection.create({
                     image: 'assets/images/game-prototypes/game-sketch-12.png',
                     imageCaption: `Design explorations for an individual item in a list of upgrades. Needs to show enough information to be useful, but not overcluttered on an iPhone.`
+                }),
+                PageSection.create({
+                    image: 'assets/images/game-prototypes/game-ui-1.jpg',
+                    imageCaption: `Implementation of the previous wireframes after iterating the prototype more and more.`
+                }),
+                PageSection.create({
+                    image: 'assets/images/game-prototypes/game-sketch-6.png',
+                    imageCaption: `Exploration of a pinball-style game's main interface while playing.`
                 }),
                 PageSection.create({
                     image: 'assets/images/game-prototypes/game-sketch-13.png',
@@ -187,6 +192,40 @@ export default Ember.Service.extend({
             ]
         }),
 
+        // Magento page
+        Project.create({
+            id: 'magento',
+            title: `Magento Ember.js Web Apps`,
+            subtitle: `Design Implementation Flow`,
+            footnote: ``,
+            customBackgroundClass: 'magento',
+            sections: [
+                PageSection.create({
+                    title: `Developing Tools for Developers to Implement Designs`,
+                    text: `As a user experience prototyper at Magento, my goal was to bridge the gaps between Adobe Illustrator-based mockups designers were creating and real web applications. I utilized Ember.js as a way to rapidly implement complex interactions and state flows into large projects.`
+                }),
+                PageSection.create({
+                    text: `I also regularly performed design audits of existing or proposed interfaces and interactions, pointing out where I thought things could be simplified, improved, or omitted.`
+                }),
+                PageSection.create({
+                    image: `assets/images/magento/magento-markup-1.png`,
+                    imageCaption: `Marked up screenshot of an existing app's interface. These were my initial thoughts on what could be improved with low effort.`
+                }),
+                PageSection.create({
+                    title: `Technologies`,
+                    text: `Primarily utilized Sketch as my tool when creating mockups, but took others' Illustrator files and implemented their state-based flows into Ember.js prototypes. These prototypes grew large enough to almost be dummy-versions of the real sites.`
+                }),
+                PageSection.create({
+                    image: `assets/images/magento/magento-markup-2.png`,
+                    imageCaption: `Another designer's inferface marked up with elements that should be changed or omitted.`
+                }),
+                PageSection.create({
+                    image: `assets/images/magento/magento-sketches-4.png`,
+                    imageCaption: `I created a reusable components library for commonly used Magento UI elements.`
+                })
+            ]
+        }),
+
         // Stickies page
         Project.create({
             id: 'stickies',
@@ -289,14 +328,25 @@ export default Ember.Service.extend({
             useWhiteText: true,
             sections: [
                 PageSection.create({
-                    text: `
-                    Duration: Feb. 2011 to Sept. 2014.
-                    Roles: game designer and developer.
-                    Team: substantially just myself.
-                    Responsibilities: designed and developed a system that—using existing challenges in Minecraft as a resource— empowered players to create owned areas that allowed them to play the game however they liked, without the troubles of letting everyone abuse and grief each other.
-                    Accomplishments: longest project I've ever worked on, and easily the biggest and most rewarding. Spanning several years through my college experience, had several devoted players and met many friends through the experience. Allowed both peaceful and warring groups of players to exist on the server in harmony.
-                    Tools: developed in Java using the Eclipse IDE and Bukkit APIs to create a custom Minecraft server.
-                    `
+                    title: `Building Blocks On Top of the Masterpiece`,
+                    text: `One of my favorite projects was my years-long development of a Minecraft server in which I coded the entire structure of the server to be a better version of multiplayer Minecraft.`
+                }),
+                PageSection.create({
+                    text: `I often found others' multiplayer servers full of cluttered information, mismatched chat text colors, and unfaithful implementations of imaginary features like in-game money. My server was devoted to having a clean interface, simple but deep structure, and an extension of the vanilla gameplay.`
+                }),
+                PageSection.create({
+                    image: `assets/images/minecraft/minecraft-1.png`,
+                    imageCaption: `There were many achivable titles in my server, including the titles Master and Grand Master, referring to the user's ability to build. In order to achieve Grand Master, a Master would have to submit a masterpiece such as this.`
+                }),
+                PageSection.create({
+                    title: `In-Game Currencies`,
+                    text: `Instead of saving some number somewhere and referring to it as money, my server's economy was based on the valuable materials mined by the playerbase. Players could buy goods and services with Iron, Diamonds, and Gold. They could expand the lands they owned, add users to their lands to collaborate, or change the rules of the game inside their areas with these currency items.`
+                }),
+                PageSection.create({
+                    text: `The best builders were even allowed to utilize a proto-Creative Mode that I implemented long before Creative Mode was in the game. I also implemented ATMs, which were like Ender Chests before they were eventually implemented.`
+                }),
+                PageSection.create({
+                    text: `Minecraft was my canvas as a young game developer. I could utilize the nearly fully featured game as a building block in creating something better, or improving elements that existed already but weren't great in multiplayer. I focused on the user experience of the average Minecraft player being able to jump right in without learning anything new, and having everything just work as expected. I made sure to include features to report unruly users, and mute abusers, thus removing them from the game entirely.`
                 })
             ]
         }),
@@ -326,6 +376,7 @@ export default Ember.Service.extend({
             ]
         }),
 
+        /*
         //CCM page
         Project.create({
             id: 'ccm',
@@ -370,7 +421,6 @@ export default Ember.Service.extend({
             ]
         }),
 
-        /*
         Project.create({
             id: 'behance',
             title: 'Behance Learning Portal',

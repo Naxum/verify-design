@@ -20,7 +20,7 @@
 {{/if}}
 
 {{#if section.linkUrl}}
-    <a class="link-container" target="_blank" rel="noreferrer" href={{section.linkUrl}}>
+    <a class="link-container {{unless linkStatic "fixed" "static"}}" target="_blank" rel="noreferrer" href={{section.linkUrl}}>
         <div class="icon">
             <img src={{section.linkImage}} />
         </div>

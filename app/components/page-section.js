@@ -8,5 +8,8 @@ export default Ember.Component.extend({
     }),
     imageBorder: Ember.computed(function() {
         return this.get('section.imageBorder') === true;
-    })
+    }),
+    linkStatic: Ember.computed(function() {
+        return this.get('section.linkStatic') === true;
+    }),
 });

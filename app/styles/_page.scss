@@ -13,14 +13,7 @@
     &.active {
         opacity: 1;
         pointer-events: auto;
-        background: transparentize(white, 0.25);
-        @media only screen and (min-width: 768px) {
-            -webkit-backdrop-filter: blur(20px);
-            background: none;
-            @supports not (-webkit-backdrop-filter: blur(20px)) {
-                background: transparentize(white, 0.25);
-            }
-        }
+        background: transparentize(white, 0.4);
     }
 }
 

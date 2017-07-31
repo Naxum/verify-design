@@ -22,6 +22,14 @@ export default Ember.Service.extend({
                     text: `Keeping up to date with technology and design patterns is one of my passions. I take pride in my ability to take a product from ideas and wireframes to functional code. Whether it's the latest feature in an iOS beta, or a new tool in a game engine, I love uncovering the possibilities they unlock.`
                 }),
                 PageSection.create({
+                    linkUrl: 'assets/jake-sawyer-resume.pdf',
+                    linkTitle: 'My Résumé',
+                    linkSubtitle: 'Check it out!',
+                    linkButton: 'Get',
+                    linkStatic: true,
+                    linkImage: 'assets/images/pdf-logo.jpg'
+                }),
+                PageSection.create({
                     image: 'assets/images/about/vive-jam-1.jpg',
                     imageCaption: `The Taco Illuminati team developing a virtual reality game in under 48 hours!`
                 }),

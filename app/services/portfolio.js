@@ -237,14 +237,19 @@ export default Ember.Service.extend({
             customBackgroundClass: 'forge-help',
             sections: [
                 PageSection.create({
-                    text: `
-                    Duration: 2 weeks in Feb. 2015.
-                    Roles: web designer and developer.
-                    Team: a lead designer, and myself.
-                    Responsibilities: implemented and tweaked a design presented in mockups into a fully functioning responsive web interface for both iPad in-app web views and fullscreen safari.
-                    Accomplishments: created a system that dynamically generates a table of contents for each support section without manual linking between sections and finished the project within a couple weeks.
-                    Tools: web development in Atom, mockup design and tweaking done in Illustrator and Sketch. The website was built on top of Harmony's content management system, and the templates were built from scratch.
-                    `
+                    title: `Rapid Website Development`,
+                    text: `Towards the end of Forge's development, we realized we needed a proper FAQ. We decided to implement it as a webpage available inside the app, and on its website. While working with a designer, I was the sole developer of the project.`
+                }),
+                PageSection.create({
+                    image: `assets/images/forge/forge-help-1.png`,
+                    imageCaption: `The FAQ website was available online, and in a web view inside the app. While displayed in the app, most navigation features of the site were hidden.`
+                }),
+                PageSection.create({
+                    title: `Tools and Roles`,
+                    text: `Working with mockups, I implemented the designs into a responsive website utilizing templates and media queries to hide navigation elements while appearing inside the Forge app. I alos created an automated table of contents that was based on articles created, and would automatically scroll to the section when selected.`
+                }),
+                PageSection.create({
+                    text: `Worked from Illustrator and Sketch compositions and implemented the site in Atom. Developed with Harmony's content management system and templating engine.`
                 })
             ]
         }),

@@ -38,7 +38,7 @@ export default Ember.Service.extend({
                 }),
                 PageSection.create({
                     linkUrl: 'https://www.linkedin.com/in/naxum/',
-                    linkImage: 'assets/images/about/linkedin-logo.png',
+                    linkImage: 'assets/images/about/linkedin-logo.jpg',
                     linkTitle: 'Check out my LinkedIn',
                     linkSubtitle: 'Full work history and more!',
                     linkButton: 'View'
@@ -59,7 +59,7 @@ export default Ember.Service.extend({
                     text: `Right after college I was luckily employed by Adonit, an iPad stylus creator. My first major project there was Forge, an iPad app for ideating sketch designs over and over without destroying your previous iterations.`
                 }),
                 PageSection.create({
-                    image: `assets/images/forge/forge-ipad-1.png`,
+                    image: `assets/images/forge/forge-ipad-1.jpg`,
                     imageCaption: `The layers of a sketch could be individually brought over into a duplicate of your current sketch, allowing you to save your previous iteration as you continued to make edits.`
                 }),
                 PageSection.create({
@@ -70,7 +70,7 @@ export default Ember.Service.extend({
                     text: `I also explored several experimental features via mockups, videos, and interactive prototypes. Mockups and art assets were created in Sketch, videos made in Adobe After Effects and Premiere. I even made a couple prototypes in Facebook Origami. The app itself was created in Xcode with Objective-C. Developed support web interfaces for both in-app web views and fullscreen safari.`
                 }),
                 PageSection.create({
-                    image: `assets/images/forge/forge-ipad-2.png`,
+                    image: `assets/images/forge/forge-ipad-2.jpg`,
                     imageCaption: `My primary role was to implement the "feel" of zooming and panning a sketch via gestures.`
                 }),
                 PageSection.create({
@@ -78,7 +78,7 @@ export default Ember.Service.extend({
                     text: `Having never worked in Objective-C before, I was given 6 months to learn the language, but ended up only needing a single month to get experienced enough to start branching the project and implementing features. I would eventually take time to learn Swift after its announcement and create a cutting edge version of a sketching app prototype.`
                 }),
                 PageSection.create({
-                    image: `assets/images/forge/forge-ipad-3.png`,
+                    image: `assets/images/forge/forge-ipad-3.jpg`,
                     imageCaption: `Forge also had a unique board collection view that implemented quick drag, drop, and reordering back in iOS 8!`
                 }),
                 PageSection.create({
@@ -111,7 +111,7 @@ export default Ember.Service.extend({
                     text: `Because the project hasn't been announced yet, I can't show anything from the real product. But early on I spent time exploring an alternative take on the game, where you and 3 friends are chefs in a taco food truck!`
                 }),
                 PageSection.create({
-                    image: 'assets/images/farbridge/farbridge-sketches-2.png',
+                    image: 'assets/images/farbridge/farbridge-sketches-2.jpg',
                     imageCaption: `Ideas for a taco truck VR experience, everyone is a chef and has to create as many orders as possible!`
                 }),
                 PageSection.create({
@@ -119,7 +119,7 @@ export default Ember.Service.extend({
                     text: `I was a designer and developer on this project, doing everything from sketching mockups to implementing major features and syncing props via the Photon networking framework. The game was built in Unity specifically for the HTC Vive, and is targeted at 4 players for a 15 minute play session.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/farbridge/farbridge-sketches-1.png',
+                    image: 'assets/images/farbridge/farbridge-sketches-1.jpg',
                     imageCaption: `A taco analyzer`
                 }),
                 PageSection.create({
@@ -150,7 +150,7 @@ export default Ember.Service.extend({
                     text: `Creating Looty Dungeon was an intense challenge. As my first full-featured game release, there turned out to be a lot of things to learn. How should levels be loaded? What should the interface look like? Are there any cool iOS features we could use to improve the experience? And it was, of course, over ambitious for a 3-4 person project.`
                 }),
                 PageSection.create({
-                    image: `assets/images/looty/looty-1.png`,
+                    image: `assets/images/looty/looty-1.jpg`,
                     imageCaption: `With over 50 different characters with their own abilities and stats, delving deep into the dungeon and battling all the different bosses offers a lot of different strategies`
                 }),
                 PageSection.create({
@@ -185,7 +185,7 @@ export default Ember.Service.extend({
                 }),
                 PageSection.create({
                     linkUrl: 'http://apple.co/LootyDungeon',
-                    linkImage: 'assets/images/looty/looty-app-icon.png',
+                    linkImage: 'assets/images/looty/looty-app-icon.jpg',
                     linkTitle: 'Looty Dungeon',
                     linkSubtitle: 'Free on the App Store!',
                     linkButton: 'Get'
@@ -243,7 +243,7 @@ export default Ember.Service.extend({
                     text: `I also regularly performed design audits of existing or proposed interfaces and interactions, pointing out where I thought things could be simplified, improved, or omitted.`
                 }),
                 PageSection.create({
-                    image: `assets/images/magento/magento-markup-1.png`,
+                    image: `assets/images/magento/magento-markup-1.jpg`,
                     imageCaption: `Marked up screenshot of an existing app's interface. These were my initial thoughts on what could be improved with low effort.`
                 }),
                 PageSection.create({
@@ -251,11 +251,11 @@ export default Ember.Service.extend({
                     text: `Primarily utilized Sketch as my tool when creating mockups, but took others' Illustrator files and implemented their state-based flows into Ember.js prototypes. These prototypes grew large enough to almost be dummy-versions of the real sites.`
                 }),
                 PageSection.create({
-                    image: `assets/images/magento/magento-markup-2.png`,
+                    image: `assets/images/magento/magento-markup-2.jpg`,
                     imageCaption: `Another designer's inferface marked up with elements that should be changed or omitted.`
                 }),
                 PageSection.create({
-                    image: `assets/images/magento/magento-sketches-4.png`,
+                    image: `assets/images/magento/magento-sketches-4.jpg`,
                     imageCaption: `I created a reusable components library for commonly used Magento UI elements.`
                 })
             ]
@@ -277,7 +277,7 @@ export default Ember.Service.extend({
                     text: `This time around, I'm also pushing myself to learn as much as I can about UIKit, custom CollectionViews, and Interface Builder as I can in a short period of time. Also, keeping the prototype just about sticky notes helps reduce the complexity of the prototype.`
                 }),
                 PageSection.create({
-                    image: `assets/images/stickies/stickies-1.png`,
+                    image: `assets/images/stickies/stickies-1.jpg`,
                     imageCaption: `Mockups of each main screen in the app, including how the drawing view would look in compact width scenarios.`
                 }),
                 PageSection.create({
@@ -288,7 +288,7 @@ export default Ember.Service.extend({
                     text: `Metal 2 pipeline renders smoothed strokes as white onto a black texture (eraser renders black strokes), then I subtract from the sticky color to get the final result. The drawing aren't yet saved to Core Data, but the sticky positions are, so the sticky notes are always in the place you left them.`
                 }),
                 PageSection.create({
-                    image: `assets/images/stickies/stickies-2.png`,
+                    image: `assets/images/stickies/stickies-2.jpg`,
                     imageCaption: `Current progress of the drawing screen, the basics are in place!`
                 }),
                 PageSection.create({
@@ -317,15 +317,15 @@ export default Ember.Service.extend({
                     text: `After working on Looty Dungeon, I spent a lot of time creating prototypes of games that we could develop in the future. Here are the wireframes for the interfaces and some design sketches to show off my sketches-to-prototype workflow.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/game-prototypes/game-sketch-1.png',
+                    image: 'assets/images/game-prototypes/game-sketch-1.jpg',
                     imageCaption: `An interaction flow following a user watching a rewarded advertisement in a free to play game to activate an income timer. Flow also shows ways to purchase permanent upgrades to the timer.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/game-prototypes/game-sketch-9.png',
+                    image: 'assets/images/game-prototypes/game-sketch-9.jpg',
                     imageCaption: `Walkthrough of a game's in-app purchase store. Includes highlighted bundle deals, with countdown timer.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/game-prototypes/game-sketch-12.png',
+                    image: 'assets/images/game-prototypes/game-sketch-12.jpg',
                     imageCaption: `Design explorations for an individual item in a list of upgrades. Needs to show enough information to be useful, but not overcluttered on an iPhone.`
                 }),
                 PageSection.create({
@@ -333,11 +333,11 @@ export default Ember.Service.extend({
                     imageCaption: `Implementation of the previous wireframes after iterating the prototype more and more.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/game-prototypes/game-sketch-6.png',
+                    image: 'assets/images/game-prototypes/game-sketch-6.jpg',
                     imageCaption: `Exploration of a pinball-style game's main interface while playing.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/game-prototypes/game-sketch-13.png',
+                    image: 'assets/images/game-prototypes/game-sketch-13.jpg',
                     imageCaption: `Breakdown of how a scene will be composed in the game engine.`
                 }),
                 PageSection.create({
@@ -363,7 +363,7 @@ export default Ember.Service.extend({
                     text: `I often found others' multiplayer servers full of cluttered information, mismatched chat text colors, and unfaithful implementations of imaginary features like in-game money. My server was devoted to having a clean interface, simple but deep structure, and an extension of the vanilla gameplay.`
                 }),
                 PageSection.create({
-                    image: `assets/images/minecraft/minecraft-1.png`,
+                    image: `assets/images/minecraft/minecraft-1.jpg`,
                     imageCaption: `There were many achivable titles in my server, including the titles Master and Grand Master, referring to the user's ability to build. In order to achieve Grand Master, a Master would have to submit a masterpiece such as this.`
                 }),
                 PageSection.create({
@@ -391,7 +391,7 @@ export default Ember.Service.extend({
                     text: `Towards the end of Forge's development, we realized we needed a proper FAQ. We decided to implement it as a webpage available inside the app, and on its website. While working with a designer, I was the sole developer of the project.`
                 }),
                 PageSection.create({
-                    image: `assets/images/forge/forge-help-1.png`,
+                    image: `assets/images/forge/forge-help-1.jpg`,
                     imageCaption: `The FAQ website was available online, and in a web view inside the app. While displayed in the app, most navigation features of the site were hidden.`
                 }),
                 PageSection.create({

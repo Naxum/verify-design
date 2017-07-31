@@ -1,6 +1,6 @@
 .portfolio-card {
     &.looty {
-        background-image: url("images/looty/looty-card.png");
+        background-image: url("images/looty/looty-card.jpg");
         background-color: #222C7B;
         background-position: left;
         // background-blend-mode: multiply;
@@ -16,21 +16,21 @@
     }
 
     &.game-prototypes {
-        background-image: /*linear-gradient(to bottom, white 20%, transparentize(white, 1) 50%),*/ url('images/game-prototypes/game-card-2.png');
+        background-image: /*linear-gradient(to bottom, white 20%, transparentize(white, 1) 50%),*/ url('images/game-prototypes/game-card-2.jpg');
         .subtitle {
             color: gray;
         }
     }
 
     &.forge {
-        background-image: linear-gradient(to bottom, transparentize(white, 0.05) 20%, transparentize(white, 0.75) 50%, white), url('images/forge/forge-card.png');
+        background-image: linear-gradient(to bottom, transparentize(white, 0.05) 20%, transparentize(white, 0.75) 50%, white), url('images/forge/forge-card.jpg');
         background-color: transparent;
         background-position: top;
         background-blend-mode: screen;
     }
 
     &.forge-help {
-        background-image: linear-gradient(to bottom, transparentize(white, 0), transparentize(white, 0.1) 30%, transparentize(white, 1) 50%), url('images/forge/forge-help-card.png');
+        background-image: linear-gradient(to bottom, transparentize(white, 0), transparentize(white, 0.1) 30%, transparentize(white, 1) 50%), url('images/forge/forge-help-card.jpg');
     }
 
     &.farbridge {
@@ -44,7 +44,7 @@
     }
 
     &.magento {
-        background-image: url('images/magento/magento-card.png');
+        background-image: url('images/magento/magento-card.jpg');
         background-position: top;
     }
 
@@ -59,7 +59,7 @@
     }
 
     &.minecraft {
-        background-image: linear-gradient(to bottom, transparentize(#251A0D, 0.2), transparentize(#251A0D, 1)), url('images/minecraft/minecraft-2.png');
+        background-image: linear-gradient(to bottom, transparentize(#251A0D, 0.2), transparentize(#251A0D, 1)), url('images/minecraft/minecraft-2.jpg');
     }
 
     &.ccm {
@@ -67,7 +67,7 @@
     }
 
     &.twitcher {
-        background-image: linear-gradient(to bottom, transparentize(#333333, 0.1) 10%, transparentize(#333333, 1) 50%), url('images/twitcher/twitcher-card.png');
+        background-image: linear-gradient(to bottom, transparentize(#333333, 0.1) 10%, transparentize(#333333, 1) 50%), url('images/twitcher/twitcher-card.jpg');
         background-position: top;
         // background-color: transparent;
         // background-blend-mode: multiply;

@@ -53,6 +53,41 @@ export default Ember.Service.extend({
             subtitle: 'App Prototype',
             footnote: 'iOS 11, Drag and Drop, Metal 2, Swift...',
             customBackgroundClass: 'stickies',
+            sections: [
+                PageSection.create({
+                    title: `Prototyping a Modern Sketching Application`,
+                    text: `Ever since working at Adobe and Adonit, I've wanted to create my perfect drawing application for iPad Pro. Every so often, I'll throw together a prototype to keep up with all the modern technologies needed to create a cutting edge drawing app.`
+                }),
+                PageSection.create({
+                    text: `This time around, I'm also pushing myself to learn as much as I can about UIKit, custom CollectionViews, and Interface Builder as I can in a short period of time. Also, keeping the prototype just about sticky notes helps reduce the complexity of the prototype.`
+                }),
+                PageSection.create({
+                    image: `assets/images/stickies/stickies-1.png`,
+                    imageCaption: `Mockups of each main screen in the app, including how the drawing view would look in compact width scenarios.`
+                }),
+                PageSection.create({
+                    title: `Technologies`,
+                    text: `The prototype is developed in the latest Xcode betas for iOS 11, utilizing Swift 4 and Metal 2. Also, the main board section has the new Drag and Drop feature which allows users to place sticky notes as they please in a Collection View with a custom Collection View Layout. You can even create new sections in the layout depending on where you're dragging your finger!`
+                }),
+                PageSection.create({
+                    text: `Metal 2 pipeline renders smoothed strokes as white onto a black texture (eraser renders black strokes), then I subtract from the sticky color to get the final result. The drawing aren't yet saved to Core Data, but the sticky positions are, so the sticky notes are always in the place you left them.`
+                }),
+                PageSection.create({
+                    image: `assets/images/stickies/stickies-2.png`,
+                    imageCaption: `Current progress of the drawing screen, the basics are in place!`
+                }),
+                PageSection.create({
+                    title: `Major Challenges`,
+                    text: `Catching up with Swift 4 turned out to be easier than I expected, and even relearning the basics of Metal 2 wasn't as challenging as I worried! This is also my first time developing a Collection View with a custom Collection View Layout, as well as dealing with Core Data, but I made it work!`
+                }),
+                PageSection.create({
+                    linkUrl: 'https://github.com/Naxum/Stickies',
+                    linkImage: 'assets/images/stickies/github-logo.jpg',
+                    linkTitle: 'Source on Github',
+                    linkSubtitle: 'Check the current progress',
+                    linkButton: 'View'
+                })
+            ]
         }),
 
         //FarBridge page

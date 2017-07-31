@@ -15,6 +15,13 @@
         }
     }
 
+    &.game-prototypes {
+        background-image: /*linear-gradient(to bottom, white 20%, transparentize(white, 1) 50%),*/ url('images/game-prototypes/game-card-2.png');
+        .subtitle {
+            color: gray;
+        }
+    }
+
     &.forge {
         background-image: linear-gradient(to bottom, transparentize(white, 0.15), transparentize(white, 0.75)), url('images/forge/forge-card.png');
         background-color: transparent;
@@ -31,6 +38,9 @@
         background-blend-mode: hard-light;
         background-color: transparent;
         background-position: top;
+        .subtitle {
+            color: desaturate(#BD4573, 40%);
+        }
     }
 
     &.about {

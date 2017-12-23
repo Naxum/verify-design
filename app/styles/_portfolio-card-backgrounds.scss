@@ -53,6 +53,15 @@
         background-position: top;
     }
 
+    &.contact {
+        background-image: /*linear-gradient(to bottom, transparentize(#5E442B, 0.75), transparentize(#1A2E45, 0.9)),*/ url('images/contact/skills.png');
+        background-position: left;
+
+        .header {
+            background-color: #F5F5F5;
+        }
+    }
+
     &.job-simulator {
         background-image: linear-gradient(to bottom, transparentize(#6C3F20, 0.25), transparentize(#6C3F20, 0.7)), url('images/job-simulator/job-simulator-card.jpg');
         background-color: transparent;

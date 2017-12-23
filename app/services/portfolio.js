@@ -22,14 +22,6 @@ export default Ember.Service.extend({
                     text: `Keeping up to date with technology and design patterns is one of my passions. I take pride in my ability to take a product from ideas and wireframes to functional code. Whether it's the latest feature in an iOS beta, or a new tool in a game engine, I love uncovering the possibilities they unlock.`
                 }),
                 PageSection.create({
-                    linkUrl: 'assets/jake-sawyer-resume.pdf',
-                    linkTitle: 'My Résumé',
-                    linkSubtitle: 'Check it out!',
-                    linkButton: 'Get',
-                    linkStatic: true,
-                    linkImage: 'assets/images/pdf-logo.jpg'
-                }),
-                PageSection.create({
                     image: 'assets/images/about/vive-jam-1.jpg',
                     imageCaption: `The Taco Illuminati team developing a virtual reality game in under 48 hours!`
                 }),
@@ -51,6 +43,27 @@ export default Ember.Service.extend({
                     linkSubtitle: 'Full work history and more!',
                     linkButton: 'View'
                 })
+            ]
+        }),
+
+        Project.create({
+            id: 'contact',
+            title: 'Résumé and Contact',
+            subtitle: 'PDFs and Emails',
+            useHeaderBackground: true,
+            customBackgroundClass: 'contact',
+            sections: [
+                PageSection.create({
+                    title: `Howdy!`,
+                    text: `Nothing gets me more excited than working together with brilliant people to create next-generation experiences via apps and games. I love building prototypes to explore concepts and new technology — virtual and augmented reality are particularly exciting, as well as productivity tools for teams and professionals.`
+                }),
+                PageSection.create({
+                    linkUrl: 'assets/jake-sawyer-resume.pdf',
+                    linkTitle: 'My Résumé',
+                    linkSubtitle: 'Check it out!',
+                    linkButton: 'Get',
+                    linkImage: 'assets/images/pdf-logo.jpg'
+                }),
             ]
         }),
 
@@ -269,6 +282,7 @@ export default Ember.Service.extend({
             ]
         }),
 
+        /*
         // Stickies page
         Project.create({
             id: 'stickies',
@@ -290,7 +304,7 @@ export default Ember.Service.extend({
                 }),
                 PageSection.create({
                     title: `Technologies`,
-                    text: `The prototype is developed in the latest Xcode betas for iOS 11, utilizing Swift 4 and Metal 2. Also, the main board section has the new Drag and Drop feature which allows users to place sticky notes as they please in a Collection View with a custom Collection View Layout. You can even create new sections in the layout depending on where you're dragging your finger!`
+                    text: `The prototype is developed in the latest Xcode for iOS 11, utilizing Swift 4 and Metal 2. Also, the main board section has the new Drag and Drop feature which allows users to place sticky notes as they please in a Collection View with a custom Collection View Layout. You can even create new sections in the layout depending on where you're dragging your finger!`
                 }),
                 PageSection.create({
                     text: `Metal 2 pipeline renders smoothed strokes as white onto a black texture (eraser renders black strokes), then I subtract from the sticky color to get the final result. The drawing aren't yet saved to Core Data, but the sticky positions are, so the sticky notes are always in the place you left them.`
@@ -303,15 +317,16 @@ export default Ember.Service.extend({
                     title: `Major Challenges`,
                     text: `Catching up with Swift 4 turned out to be easier than I expected, and even relearning the basics of Metal 2 wasn't as challenging as I worried! This is also my first time developing a Collection View with a custom Collection View Layout, as well as dealing with Core Data, but I made it work!`
                 }),
-                PageSection.create({
-                    linkUrl: 'https://github.com/Naxum/Stickies',
-                    linkImage: 'assets/images/stickies/github-logo.jpg',
-                    linkTitle: 'Source on Github',
-                    linkSubtitle: 'Check the current progress',
-                    linkButton: 'View'
-                })
+                // PageSection.create({
+                //     linkUrl: 'https://github.com/Naxum/Stickies',
+                //     linkImage: 'assets/images/stickies/github-logo.jpg',
+                //     linkTitle: 'Source on Github',
+                //     linkSubtitle: 'Check the current progress',
+                //     linkButton: 'View'
+                // })
             ]
         }),
+        */
 
         // Game Prototypes page
         Project.create({

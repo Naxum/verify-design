@@ -12,7 +12,7 @@
         transition: all 0.2s ease;
 
         &:hover {
-            transform: scale(1.02)
+            transform: scale(1.01)
         }
 
         &:active {
@@ -66,6 +66,18 @@
     // &.active {
     //     z-index: 100;
     // }
+
+    &.header-background .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 1.5rem;
+        width: 100%;
+        border-top-right-radius: $border-radius;
+        border-top-left-radius: $border-radius;
+    }
 
     .header {
         width: calc(100% - 2rem);

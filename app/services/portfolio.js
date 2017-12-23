@@ -36,33 +36,50 @@ export default Ember.Service.extend({
                     title: `When I'm Not Creating...`,
                     text: `I love unwinding by playing videogames or catching up on awesome TV shows like Steven Universe and Game of Thrones. I used to practice Karate when I was younger and am a second-degree black belt in Karate! I hope to continue practicing martial arts soon.`
                 }),
-                PageSection.create({
-                    linkUrl: 'https://www.linkedin.com/in/naxum/',
-                    linkImage: 'assets/images/about/linkedin-logo.jpg',
-                    linkTitle: 'Check out my LinkedIn',
-                    linkSubtitle: 'Full work history and more!',
-                    linkButton: 'View'
-                })
+                // PageSection.create({
+                //     linkUrl: 'https://www.linkedin.com/in/naxum/',
+                //     linkImage: 'assets/images/about/linkedin-logo.jpg',
+                //     linkTitle: 'Check out my LinkedIn',
+                //     linkSubtitle: 'Full work history and more!',
+                //     linkButton: 'View'
+                // })
             ]
         }),
 
         Project.create({
             id: 'contact',
             title: 'Résumé and Contact',
-            subtitle: 'PDFs and Emails',
+            subtitle: 'Downloads and Links',
             useHeaderBackground: true,
             customBackgroundClass: 'contact',
             sections: [
                 PageSection.create({
-                    title: `Howdy!`,
-                    text: `Nothing gets me more excited than working together with brilliant people to create next-generation experiences via apps and games. I love building prototypes to explore concepts and new technology — virtual and augmented reality are particularly exciting, as well as productivity tools for teams and professionals.`
+                    title: `Contact Me`,
+                    text: `Feel free to reach out! I'm currently actively looking for new roles.`
+                }),
+                PageSection.create({
+                    linkUrl: 'https://www.linkedin.com/in/naxum/',
+                    linkImage: 'assets/images/about/linkedin-logo.jpg',
+                    linkTitle: 'LinkedIn profile',
+                    linkStatic: true,
+                    linkSubtitle: 'Full work history and more',
+                    linkButton: 'View'
                 }),
                 PageSection.create({
                     linkUrl: 'assets/jake-sawyer-resume.pdf',
-                    linkTitle: 'My Résumé',
-                    linkSubtitle: 'Check it out!',
+                    linkTitle: 'My résumé',
+                    linkSubtitle: 'Download as PDF',
                     linkButton: 'Get',
+                    linkStatic: true,
                     linkImage: 'assets/images/pdf-logo.jpg'
+                }),
+                PageSection.create({
+                    linkUrl: 'mailto:jake@verify.design',
+                    linkImage: 'assets/images/contact/email.png',
+                    linkTitle: 'jake@verify.design',
+                    linkStatic: true,
+                    linkSubtitle: 'Non-fancy alternative: jake@naxite.com',
+                    linkButton: 'Send'
                 }),
             ]
         }),
@@ -111,7 +128,7 @@ export default Ember.Service.extend({
                     linkImage: 'assets/images/forge/forge-app-icon.jpg',
                     linkTitle: 'Forge',
                     linkSubtitle: 'On the App Store!',
-                    linkButton: '$3.99'
+                    linkButton: 'View'
                 })
             ]
         }),
@@ -119,29 +136,30 @@ export default Ember.Service.extend({
         //FarBridge page
         Project.create({
             id: 'farbridge',
-            title: 'Multiplayer VR Game for HTC Vive',
-            subtitle: 'Unnanounced Game',
+            title: 'Jar Wars',
+            subtitle: 'Multiplayer VR Game',
+            useWhiteText: true,
             customBackgroundClass: 'farbridge',
-            footnote: 'Unity Engine, Photon Networking',
+            footnote: 'Hectic 2v2 battler in the HTC Vive',
             sections: [
                 PageSection.create({
                     title: `Creating a Multiplayer Experience for Virtual Reality`,
                     text: `Recently was a part of a 6-month long project to build a 4 player virtual reality project in Unity. It was a lot of fun and an interesting challenge to develop a game from scratch for VR and make it multiplayer, which I didn't have much experience with before!`
                 }),
                 PageSection.create({
-                    text: `Because the project hasn't been announced yet, I can't show anything from the real product. But early on I spent time exploring an alternative take on the game, where you and 3 friends are chefs in a taco food truck!`
+                    text: `Jar Wars is a 4 player arcade battler with networked multiplayer. It's best played in a 2v2 format, and we even implemented spectator cameras for tournaments.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/farbridge/farbridge-sketches-2.jpg',
-                    imageCaption: `Ideas for a taco truck VR experience, everyone is a chef and has to create as many orders as possible!`
+                    image: 'assets/images/farbridge/jar-wars-selfie.png',
+                    imageCaption: `Two players relaxing in the pre-game lobby. Great safe space for players to explore and learn the controls.`
                 }),
                 PageSection.create({
                     title: `Roles and Technologies`,
                     text: `I was a designer and developer on this project, doing everything from sketching mockups to implementing major features and syncing props via the Photon networking framework. The game was built in Unity specifically for the HTC Vive, and is targeted at 4 players for a 15 minute play session.`
                 }),
                 PageSection.create({
-                    image: 'assets/images/farbridge/farbridge-sketches-1.jpg',
-                    imageCaption: `A taco analyzer`
+                    image: 'assets/images/farbridge/jar-wars-battle.png',
+                    imageCaption: `Battle gameplay, two players shoot cartoonish projectiles at each other while dodging and reflecting shots.`
                 }),
                 PageSection.create({
                     title: `Major Challenges`,
@@ -149,7 +167,22 @@ export default Ember.Service.extend({
                 }),
                 PageSection.create({
                     text: `There were also a lot of bugs that would only appear when 3+ players were connected to the game, so our initial tests with 2 players would usually give false positives of everything being okay.`
-                })
+                }),
+                PageSection.create({
+                    image: 'assets/images/farbridge/jar-wars-brains.png',
+                    imageCaption: `Alas, poor Jarhead! I knew him, Cool Dude.`
+                }),
+                PageSection.create({
+                    title: `Reception`,
+                    text: `We held two major public sessions of the game. A 2v2 tournament at Fantastic Arcade 2017 went off excellently (you can catch a link to the stream below). We also demoed the game at Game On 2017 for several hours. I heard a kid later ask his parents if they could buy a Vive to get the 'brain game,' so I'm very pleased with the game's reception.`
+                }),
+                PageSection.create({
+                    linkUrl: 'https://www.youtube.com/watch?v=yxisrvSjmU8',
+                    linkImage: 'assets/images/farbridge/youtube.jpg',
+                    linkTitle: 'Recorded livestream',
+                    linkSubtitle: 'Check out the 2v2 tournament!',
+                    linkButton: 'View'
+                }),
             ]
         }),
 
@@ -408,6 +441,7 @@ export default Ember.Service.extend({
             title: 'Forge Help',
             subtitle: 'Supplementary Aid Portal',
             customBackgroundClass: 'forge-help',
+            useHeaderBackground: true,
             sections: [
                 PageSection.create({
                     title: `Rapid Website Development`,

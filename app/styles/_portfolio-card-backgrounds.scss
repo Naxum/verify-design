@@ -30,14 +30,15 @@
     }
 
     &.forge-help {
-        background-image: linear-gradient(to bottom, transparentize(white, 0), transparentize(white, 0.1) 30%, transparentize(white, 1) 50%), url('images/forge/forge-help-card.jpg');
+        background-image: /*linear-gradient(to bottom, transparentize(white, 0), transparentize(white, 0.1) 30%, transparentize(white, 1) 50%),*/ url('images/forge/forge-help-card.jpg');
+        background-position: 80% 50%;
     }
 
     &.farbridge {
-        background-image: linear-gradient(to bottom, transparentize(#ECE3CC, 0.1), transparentize(#f29ebf, 0.2)), url('images/farbridge/farbridge-card.jpg');
+        background-image: linear-gradient(to bottom, darken(#483b60, 20%), transparentize(#483b60, 1), darken(#483b60, 20%)), url('images/farbridge/jar-wars-cover.png');
         background-blend-mode: hard-light;
         background-color: transparent;
-        background-position: top;
+        background-position: 30% 50%;
         .subtitle {
             color: desaturate(#BD4573, 40%);
         }
